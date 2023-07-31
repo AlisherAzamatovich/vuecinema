@@ -1,0 +1,18 @@
+@import 'varibles.css';
+@import 'reset.css';
+@import 'fonts.css';
+@import './components/header.css';
+@import './components/main.css';
+
+
+body {
+    background: var(--primaryColor);
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}

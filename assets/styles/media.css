@@ -1,0 +1,113 @@
+@media (max-width:1199.99px) {
+    .films__content-cards {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .collections__content-items{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width:991.99px) {
+    .series__collection{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    /* .series__collection-item:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    } */
+}
+
+@media (max-width:767.99px) {
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav__list {
+        position: absolute;
+        right: 0;
+        top: -300px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+        background: rgba(1, 3, 5, 0.80);
+        transition: .5s;
+    }
+
+    .nav__list-link::after {
+        bottom: -5px;
+    }
+
+    .nav__menu:hover .nav__list {
+        top: 100%;
+    }
+
+    .intro__content-title {
+        font-size: 52px;
+        text-align: center;
+    }
+
+    .intro__content-descr {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .intro__content-btns-group {
+        justify-content: center;
+    }
+
+    .video__section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video__section {
+        background: linear-gradient(90deg,
+            rgb(222, 247, 255, .5) 0%,
+            rgb(244, 252, 255, .5) 45.31%,
+            rgba(255, 255, 255, 0.00) 100%);
+        }
+}
+
+@media (max-width:575.99px) {
+
+    .intro {
+        min-height: 600px;
+    }
+
+    .intro__content-title {
+        font-size: 40px;
+    }
+
+    .intro__content-btns-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .collections__content-items{
+        justify-content: start;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .collections__content-item{
+        min-width: 350px;
+    }
+    .series__collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .series__collection-item:nth-child(1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
